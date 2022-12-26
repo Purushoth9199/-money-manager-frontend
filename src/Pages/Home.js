@@ -28,7 +28,7 @@ function Home() {
 
       setloading(true);
       const response = await axios.post(
-        "/api/transactions/get-all-transactions",
+        "https://money-manager-zrjl.onrender.com/api/transactions/get-all-transactions",
         {
           userId: user._id, frequency,
           ...(frequency === 'custom' && { selectedRange }),
@@ -49,7 +49,7 @@ function Home() {
     try {
       setloading(true);
       await axios.post(
-        "/api/transactions/delete-transaction",
+        "https://money-manager-zrjl.onrender.com/api/transactions/delete-transaction",
         {
           transactionId: record._id
         });
