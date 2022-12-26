@@ -13,7 +13,7 @@ function Register() {
     const onFinish = async (Values) => {
         try {
             setloading(true)
-            await axios.post('/api/users/register', Values)
+            await axios.post('https://money-manager-zrjl.onrender.com/api/users/register', Values)
             message.success('Registration Successful')
             setloading(false)
         } catch (error) {
