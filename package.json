@@ -41,5 +41,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://money-manager-zrjl.onrender.com"
+  "proxy": "https://money-manager-zrjl.onrender.com/http://localhost:5000"
 }
