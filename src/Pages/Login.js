@@ -12,7 +12,7 @@ function Login() {
     const onFinish = async (Values) => {
         try {
             setloading(true)
-            const response = await axios.post('/api/users/login', Values)
+            const response = await axios.post('https://money-manager-zrjl.onrender.com/api/users/login', Values)
             localStorage.setItem('MoneyManager-users', JSON.stringify({...response.data , password:'' }))
             setloading(false)
             message.success('Login Successful')
